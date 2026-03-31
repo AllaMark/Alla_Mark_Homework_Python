@@ -1,19 +1,14 @@
 class User:
 
-    def __init__(self, name):
-        self.userName = name,
-
+    def __init__(self, fstname, lstname):
+        self.userName = fstname
+        self.userLstName = lstname
+    
     def sayFstName(self):
-        print("Имя ", self.FstName)
-
-    def setFstName(self, newFstName):
-        self.FstName = newFstName
+        print("Имя ", self.userName)
 
     def sayLstName(self):
-        print("Фамилия ", self.LstName)
-
-    def setLstName(self, newLstName):
-        self.LstName = newLstName
+        print("Фамилия ", self.userLstName)
 
     def sayFlName(self):
-        print("Имя и Фамилия ", self.FstName, self.LstName)
+        print("Имя и Фамилия ", self.userName, self.userLstName)

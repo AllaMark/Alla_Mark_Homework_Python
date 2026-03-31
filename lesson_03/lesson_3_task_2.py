@@ -1,11 +1,11 @@
 from smartphone import Smartphone
 
 catalog = [
-	Smartphone ("Apple" , "1" , "+79011234567"),
-	Smartphone ("Apple" , "2" , "+79021234567"),
-	Smartphone ("Apple" , "3 ", "+79031234567"),
-	Smartphone ("Apple" , "4" , "+79041234567"),
-	Smartphone ("Apple" , "5" , "+79051234567"),
+	Smartphone ("1" , "Apple" , "+79011234567"),
+	Smartphone ("2" , "Apple" , "+79021234567"),
+	Smartphone ("3" , "Apple", "+79031234567"),
+	Smartphone ("4" , "Apple" , "+79041234567"),
+	Smartphone ("5" , "Apple" , "+79051234567"),
 ]
 for phone in catalog:
-    print(f"{phone.model} - {phone.mark}. {phone.number}")
+    print(f"{phone.mark} - {phone.model}. {phone.number}")
