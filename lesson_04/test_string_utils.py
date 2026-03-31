@@ -50,14 +50,14 @@ def test_capitalize_negative(input_str, expected):
 
 
 @pytest.mark.parametrize("input_str, expected", [
-    ("  skypro", "  skypro"),
+    ("skypro", "skypro"),
 ])
 def test_trim_negative(input_str, expected):
     assert string_utils.trim(input_str) == expected
 
 
 @pytest.mark.parametrize("input_str, input_symbol, expected", [
-    ("skypro", "w", True),
+    ("skypro", "w", False),
 ])
 def test_contains_negative(input_str, input_symbol, expected):
     assert string_utils.contains(input_str, input_symbol) == expected
@@ -65,7 +65,7 @@ def test_contains_negative(input_str, input_symbol, expected):
 
 @pytest.mark.parametrize("input_str, input_symbol, expected", 
     [
-    ("skypro", "s", "skypro"),
+    ("skypro", "h", "skypro"),
 ])
 def test_delete_symbol_negative(input_str, input_symbol, expected):
     assert string_utils.delete_symbol(input_str, input_symbol,) == expected
